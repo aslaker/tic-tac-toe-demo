@@ -1,0 +1,15 @@
+<mat-toolbar class="mat-elevation-z3">
+  Tic Tac Toe Demo
+  <span class="example-spacer"></span>
+  <div style="margin-right: 150px">
+    X Wins: {{ (currentState | async).xWins }}
+  </div>
+  <div style="margin-right: 25px">
+    O Wins:  {{ (currentState | async).oWins }}
+  </div>
+</mat-toolbar>
+<div class="wrapper">
+  <div class="game-wrapper">
+    <app-square *ngFor="let id of squareIds" [boardLocation]="id" #square></app-square>
+  </div>
+</div>

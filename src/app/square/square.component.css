@@ -1,0 +1,16 @@
+div {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.fillContainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+span {
+  font-size: 10em;
+}
